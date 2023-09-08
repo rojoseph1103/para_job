@@ -12,7 +12,5 @@ pipeline {
                 sh 'sudo wget https://dlcdn.apache.org/maven/maven-3/$maven --version/binaries/apache-$maven --version-bin.tar.gz'
             }
         }
-	
-
     }
 }
