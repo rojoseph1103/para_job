@@ -1,7 +1,7 @@
 pipeline {
     agent any
     parameters {
-        string(name: 'maven_version', defaultValue: '3.9.4', description: 'pass the version of maven')
+        string(name: 'maven_version', defaultValue: '3.9.3', description: 'pass the version of maven')
     }
 	  stages {
         stage('download maven') {
