@@ -1,15 +1,15 @@
 pipeline {
-   agent any
-   parameters{
-     string(name:'maven_version', defaultValue:'3.9.4', description:'pass the version of maven')
-   }
-  
+    agent any
+
+    parameters {
+        string(defaultValue: "", description: 'K', name: 'HELLO')
+    }
+
     stages {
-        stage('Download maven') {
-            steps {
-                sh 'cd /home'
-                sh 'sudo wget https://dlcdn.apache.org/maven/maven-3/$maven_version/binaries/apache-maven-$maven_version-bin.tar.gz'
+        stage('PrintParameter'){
+            steps{
+                sh 'echo ${HELLO}'
             }
-       } 
-    }
-  }
+        }
+    }
+}
