@@ -7,7 +7,7 @@ pipeline {
         stage('download maven') {
             steps {
 		sh 'cd /var/lib/jenkins/'    
-                sh 'sudo wget https://apache.mirror.digitalpacific.com.au/maven/maven-3/${params.maven_version}/binaries/apache-maven-${params.maven_version}-bin.tar.gz'
+                sh 'sudo wget https://dlcdn.apache.org/maven/maven-3/$maven_version/binaries/apache-maven-$maven_version-bin.tar.gz'
 
             }
         }
