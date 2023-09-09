@@ -1,5 +1,3 @@
-// Jenkins file (Declarative Pipeline)
-
 pipeline {
    agent any
    parameters{
