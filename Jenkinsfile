@@ -2,7 +2,7 @@ pipeline {
     agent any
     
     parameters {
-        choice(name: 'MAVEN_VERSION', choices: ['3.8.4', '3.8.3', '3.8.2'], description: 'Select the Maven version to install')
+        string(name: 'MAVEN_VERSION', defaultValue: '3.8.4', description: 'Enter the Maven version to install (e.g., 3.8.4)')
     }
     
     stages {
@@ -39,3 +39,4 @@ pipeline {
         }
     }
 }
+
