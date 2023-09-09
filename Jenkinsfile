@@ -1,5 +1,3 @@
-// Jenkins file (Declarative Pipeline)
-
 pipeline {
    agent any
    parameters{
@@ -12,6 +10,6 @@ pipeline {
                 sh 'cd /home'
                 sh 'sudo wget https://dlcdn.apache.org/maven/maven-3/$maven_version/binaries/apache-maven-$maven_version-bin.tar.gz'
             }
-       } 
+        } 
     }
   }
