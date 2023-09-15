@@ -1,13 +1,13 @@
 pipeline {
     agent any
         parameters {
-          string(defaultValue: "3.9.3", description: 'pass the version of maven', name: 'maven_version')
+          string(defaultValue: "3", description: 'pass the name of rom', name: 'Rom')
           }
           stages {
-            stage('download maven'){
+            stage('my name'){
               steps{
-                sh'cd /opt'
-                sh'sudo wget https://dlcdn.apache.org/maven/maven-3/$maven_version/binaries/apache-maven-$maven_version-bin.tar.gz'
+                
+                sh 'sudo my name is rom'
               }
             }
           }
