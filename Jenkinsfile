@@ -6,11 +6,12 @@ pipeline {
     }
 
     stages {
-        stage('download maven'){
-            steps{
-                sh 'cd/var/lib/jenkin'
-		sh 'sudo wget https://dlcdn.apache.org/maven/maven-3/$maven_version/binaries/apache-maven-$maven_version-bin.tar.gz'
-            }
-          }
-      }
+       stage('download maven'){
+         steps{
+           sh 'cd/var/lib/jenkin'
+           sh 'sudo wget https://dlcdn.apache.org/maven/maven-3/$maven_version/binaries/apache-maven-$maven_version-bin.tar.gz'
+            
+          }
+       }
+    }
   }
